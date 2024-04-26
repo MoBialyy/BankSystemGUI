@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="lgnbtn" layoutX="237.0" layoutY="227.0" mnemonicParsing="false" onAction="#createacc22" prefHeight="17.0" prefWidth="149.0" text="Create account">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="499.0" layoutX="101.0" layoutY="82.0" startX="-100.0">
+         <fill>
+            <RadialGradient centerX="0.24104683195592286" centerY="0.9089834515366431" cycleMethod="REFLECT" radius="0.8771428571428572">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.019950048997998238" green="0.8618420958518982" blue="0.13220232725143433" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Line>
+      <Label layoutX="14.0" layoutY="18.0" prefHeight="39.0" prefWidth="581.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="99.0" text="Enter the type of the account you want to create">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img2" blendMode="DARKEN" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../NBE_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="wrong22" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="274.0" prefHeight="25.0" prefWidth="379.0" textAlignment="CENTER" textFill="#18f000">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rbtn1" layoutX="266.0" layoutY="154.0" mnemonicParsing="false" text="Checking">
+         <toggleGroup>
+            <ToggleGroup fx:id="acctype" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtn2" layoutX="267.0" layoutY="184.0" mnemonicParsing="false" text="Savings" toggleGroup="$acctype" />
+      <Button layoutX="523.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchScene2" prefHeight="25.0" prefWidth="51.0" text="back" />
+   </children>
+   <effect>
+      <InnerShadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0" />
+   </effect>
+</AnchorPane>

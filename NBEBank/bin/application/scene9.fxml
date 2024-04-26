@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+   	  <ImageView fx:id="img2" blendMode="DARKEN" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../NBE_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="574.0" text="Account Details">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Line endX="499.0" layoutX="101.0" layoutY="80.0" startX="-100.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="105.0" text="Your account details are">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentBalance" layoutX="329.0" layoutY="338.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Button fx:id="logoutbtn1" layoutX="523.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchScene2" prefHeight="25.0" prefWidth="51.0" text="back" />
+      <Button fx:id="logoutbtn11" layoutX="30.0" layoutY="156.0" mnemonicParsing="false" onAction="#checkBalance" prefHeight="25.0" prefWidth="204.0" text="show" />
+      <Label layoutX="33.0" layoutY="215.0" text="Name:" />
+      <Label fx:id="clientName" layoutX="113.0" layoutY="215.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="33.0" layoutY="244.0" text="Address:" />
+      <Label fx:id="clientAdd" layoutX="113.0" layoutY="244.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="33.0" layoutY="274.0" text="National ID:" />
+      <Label fx:id="clientNID" layoutX="113.0" layoutY="274.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="33.0" layoutY="306.0" text="Customer ID:" />
+      <Label fx:id="clientCID" layoutX="113.0" layoutY="306.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="239.0" layoutY="215.0" text="Email:" />
+      <Label fx:id="clientEmail" layoutX="329.0" layoutY="215.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="239.0" layoutY="244.0" text="Phone nb:" />
+      <Label fx:id="clientPNB" layoutX="329.0" layoutY="244.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="239.0" layoutY="274.0" text="Password:" />
+      <Label fx:id="clientPw" layoutX="329.0" layoutY="274.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="239.0" layoutY="306.0" text="Account ID:" />
+      <Label fx:id="clientAID" layoutX="329.0" layoutY="306.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="33.0" layoutY="338.0" text="Account Type:" />
+      <Label fx:id="clientAType" layoutX="113.0" layoutY="338.0" prefHeight="17.0" prefWidth="125.0" visible="false" />
+      <Label layoutX="238.0" layoutY="338.0" text="Current Balance:" />
+   </children>
+</AnchorPane>

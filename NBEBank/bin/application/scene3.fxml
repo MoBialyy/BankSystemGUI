@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="22.0" layoutY="141.0" promptText="username" />
+      <PasswordField fx:id="passTextField" layoutX="22.0" layoutY="202.0" promptText="password" />
+      <Button fx:id="lgnbtn" layoutX="400.0" layoutY="326.0" mnemonicParsing="false" onAction="#createacc" prefHeight="25.0" prefWidth="149.0" text="Create account">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="499.0" layoutX="101.0" layoutY="75.0" startX="-100.0">
+         <fill>
+            <RadialGradient centerX="0.24104683195592286" centerY="0.9089834515366431" cycleMethod="REFLECT" radius="0.8771428571428572">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.019950048997998238" green="0.8618420958518982" blue="0.13220232725143433" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Line>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="581.0" text="NBE OFFICIAL APP">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4944903581267218" centerY="0.4598108747044918" cycleMethod="REPEAT" focusAngle="-53.47" radius="0.8828571428571429">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.5855262875556946" blue="0.07807017862796783" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="22.0" layoutY="81.0" text="Enter your credentials below">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img1" blendMode="COLOR_BURN" fitHeight="150.0" fitWidth="200.0" layoutX="399.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../login.png" />
+         </image></ImageView>
+      <Label layoutX="22.0" layoutY="175.0" text="Password" />
+      <Label layoutX="22.0" layoutY="113.0" text="Username" />
+      <ImageView fx:id="img2" blendMode="DARKEN" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../NBE_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="wrong" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="361.0" prefHeight="25.0" prefWidth="592.0" textAlignment="CENTER" textFill="#18f000">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="237.0" text="Address" />
+      <Button fx:id="lgnbtn1" layoutX="447.0" layoutY="287.0" mnemonicParsing="false" onAction="#switchScene1" text="Back">
+         <font>
+            <Font name="Bookman Old Style" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="addressTextField" layoutX="22.0" layoutY="264.0" promptText="address" />
+      <Label layoutX="24.0" layoutY="299.0" text="National ID" />
+      <TextField fx:id="nationalIDTextField" layoutX="23.0" layoutY="326.0" promptText="national id" />
+      <Label layoutX="204.0" layoutY="113.0" text="Email address" />
+      <Label layoutX="207.0" layoutY="236.0" text="Account type" />
+      <Label layoutX="205.0" layoutY="175.0" text="Phone number" />
+      <TextField fx:id="phoneTextField" layoutX="204.0" layoutY="202.0" promptText="phone number" />
+      <TextField fx:id="emailTextField" layoutX="204.0" layoutY="140.0" promptText="email address" />
+      <RadioButton fx:id="rbtn1" layoutX="221.0" layoutY="268.0" mnemonicParsing="false" text="Checking">
+         <toggleGroup>
+            <ToggleGroup fx:id="acctype" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbtn2" layoutX="222.0" layoutY="298.0" mnemonicParsing="false" text="Savings" toggleGroup="$acctype" />
+   </children>
+   <effect>
+      <InnerShadow blurType="ONE_PASS_BOX" height="0.0" radius="0.0" width="0.0" />
+   </effect>
+</AnchorPane>

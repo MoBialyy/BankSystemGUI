@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="menuScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+   	  <ImageView fx:id="img2" blendMode="DARKEN" fitHeight="150.0" fitWidth="200.0" layoutX="374.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../NBE_logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="574.0" text="Loan Payment">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Line endX="499.0" layoutX="101.0" layoutY="80.0" startX="-100.0" />
+      <Label fx:id="please" layoutX="182.0" layoutY="251.0" text="Your current balance is:" visible="false">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="94.0" prefHeight="28.0" prefWidth="460.0" text="Enter the loan id of the loan you want to pay">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="523.0" layoutY="334.0" mnemonicParsing="false" onAction="#switchScene2" prefHeight="25.0" prefWidth="51.0" text="back" />
+      <Button fx:id="accessbtn" layoutX="354.0" layoutY="150.0" mnemonicParsing="false" onAction="#checkLID" text="Enter" />
+      <TextField fx:id="loanIDTextField" layoutX="182.0" layoutY="150.0" promptText="loan id" />
+      <Label fx:id="balance12" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="219.0" prefHeight="65.0" prefWidth="408.0" text="Do you want to proceed to pay your due amount, which is " visible="false" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="balance122" layoutX="275.0" layoutY="252.0" prefHeight="34.0" prefWidth="188.0" visible="false" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnokxx" layoutX="257.0" layoutY="304.0" mnemonicParsing="false" onAction="#proceed" text="proceed" visible="false" />
+      <Label fx:id="balance123" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="219.0" prefHeight="65.0" prefWidth="408.0" text="Do you want to proceed to pay your due amount, which is " visible="false" wrapText="true">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
